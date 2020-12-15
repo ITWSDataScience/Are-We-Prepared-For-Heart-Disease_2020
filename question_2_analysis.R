@@ -256,6 +256,6 @@ plot(`Heart Disease Mortality` ~ `adjusted_beds`, data = final_dataset)
 abline(model2)
 
 
-final_dataset$inquiry1 <- final_dataset$`Heart Disease Mortality` / final_dataset$adjusted_beds
-final_dataset$inquiry2 <- final_dataset$`Heart Disease Mortality` / final_dataset$`Percent of pop w/no health insurance`
+final_dataset$inquiry1 <- final_dataset$`Heart Disease Mortality` / final_dataset$`Percent of pop w/no health insurance`
+final_dataset$inquiry2 <- final_dataset$`Heart Disease Mortality` / final_dataset$adjusted_beds
 write.csv(final_dataset,"final_analysis.csv", row.names = FALSE)
