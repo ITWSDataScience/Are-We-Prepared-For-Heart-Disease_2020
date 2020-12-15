@@ -1,0 +1,69 @@
+{
+  "meta" : [
+    {
+      "Column" : "State",
+      "Datatype" : "FIPS Two-Letter State Code",
+      "Units" : null
+    },
+    {
+      "Column" : "County",
+      "Datatype" : "String",
+      "Units" : null,
+      "Notes" : "County itself is not a unique value. The column State and County together are unique"
+    },
+    {
+      "Column" : "NUM_LICENSED_BEDS",
+      "Datatype" : "integer",
+      "Units" : "maximum number of beds that are licensed to operate",
+      "Notes" : "The number of beds are by county as a sum of all hospitals in that couty. NA indicates that there are no licensed beds in that county or the value was not reported. The maximum beds does not indicate the number of beds being used. Data was reported for 2020 and was retrieved on November 16, 2020"
+    },
+    {
+      "Column" : "Population with public coverage",
+      "Datatype" : "integer",
+      "Units" : "People",
+      "Notes" : "The value is for total civilian noninstitutionalid population - with public coverage. Data was collected by the American Community Survey for 5-year data from 2014 to 2018."
+    },
+    {
+      "Column" : "Percent of pop w/no health insurance",
+      "Datatype" : "double",
+      "Units" : "percent",
+      "Notes" : "Value is for total population with no health insurance. Data was collected by the American Community Survey for 5-year data from 2014 to 2018."
+    },
+    {
+      "Column" : "margin of error",
+      "Datatype" : "double",
+      "Units" : "percent",
+      "Notes" : "Margin of error for Percent of pop w/no health insurance column."
+    },
+    {
+      "Column" : "PopEstimate2018",
+      "Datatype" : "integer",
+      "Units" : "people",
+      "Notes" : "County population estimates by the US Census Bureau base on 2010 census data."
+    },
+    {
+      "Column" : "Heart Disease Mortality",
+      "Datatype" : "double",
+      "Units" : "deaths per 100,000",
+      "Notes" : "Value is from 2017 and is an age-adjusted 3 year average for individuals over 35"
+    },
+    {
+      "Column" : "adjusted_beds",
+      "Datatype" : "double",
+      "Units" : "number of beds that are licensed to operate per 100,000 people",
+      "Notes" : "Using NUM_LICENSED_BEDS and PopEstimate2018 to get a county population adjusted value"
+    },
+    {
+      "Column" : "inquiry1",
+      "Datatype" : "double",
+      "Units" : "deaths per 100,00 per percent of population w/no health insurance",
+      "Notes" : "created by dividing Heart Disease Mortality column by Percent of pop w/no health insurnace column"
+    },
+    {
+      "Column" : "inquiry2",
+      "Datatype" : "double",
+      "Units" : "deaths per number of licensed beds",
+      "Notes" : "created by dividing Heart Disease Mortality column by adjusted_beds"
+    }
+  ]
+}
