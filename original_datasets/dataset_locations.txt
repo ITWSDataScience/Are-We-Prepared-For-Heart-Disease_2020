@@ -1,0 +1,9 @@
+Heart_Disease_mortality_rate.csv -> https://chronicdata.cdc.gov/Heart-Disease-Stroke-Prevention/Heart-Disease-Mortality-Data-Among-US-Adults-35-by/6x7h-usvx
+
+Hospital_beds.csv -> https://opendata.dc.gov/datasets/1044bb19da8d4dbfb6a96eb1b4ebf629_0
+
+Health_insurance.csv -> https://covid19.census.gov/datasets/b69c7076eaa8433eab8f7fa077bac3b6/data
+
+county_population_estimates.csv -> https://www2.census.gov/programs-surveys/popest/datasets/2010-2018/counties/totals/ 
+
+state_codes.csv -> https://www.ssa.gov/international/coc-docs/states.html
